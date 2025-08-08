@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File pdf- Modern & Free</title>
+    <meta name="description" content="Convert images and documents to PDF format instantly with our modern, secure, and free online converter.">
+    <meta name="keywords" content="PDF converter, image to PDF, document to PDF, free converter, online tool">
+    <meta property="og:title" content="File to PDF Converter - Modern & Free">
+    <meta property="og:description" content="Convert images and documents to PDF format instantly">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File to PDF Converter</h1>
+            <p class="subtitle">Convert images and documents to PDF instantly</p>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                </svg>
+            </button>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <h3>Drag & Drop files here</h3>
+                    <p>or <span class="browse-link">browse files</span></p>
+                    <input type="file" id="fileInput" multiple accept=".jpg,.jpeg,.png,.gif,.bmp,.doc,.docx,.txt,.rtf" hidden>
+                    <div class="supported-formats">
+                        <span>Supported: JPG, PNG, GIF, BMP, DOC, DOCX, TXT, RTF</span>
+                    </div>
+                </div>
+
+                <div class="file-list" id="fileList"></div>
+
+                <div class="conversion-section" id="conversionSection" style="display: none;">
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">0%</span>
+                    </div>
+                    <button class="convert-btn" id="convertBtn">Convert to PDF</button>
+                </div>
+
+                <div class="result-section" id="resultSection" style="display: none;">
+                    <div class="success-message">
+                        <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <h3>Conversion Complete!</h3>
+                        <p>Your PDF is ready for download</p>
+                        <button class="download-btn" id="downloadBtn">Download PDF</button>
+                        <button class="convert-another-btn" id="convertAnotherBtn">Convert Another File</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Secure, fast, and free file conversion</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/drag-drop.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

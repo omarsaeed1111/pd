@@ -1,0 +1,37 @@
+body.dark-mode {
+    --background: #0f172a;
+    --surface: #1e293b;
+    --surface-glass: rgba(30, 41, 59, 0.8);
+    --border: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+body.dark-mode .upload-area {
+    background: var(--surface-glass);
+    border-color: var(--border);
+}
+
+body.dark-mode .file-item,
+body.dark-mode .success-message {
+    background: var(--surface-glass);
+}
+
+body.dark-mode .convert-another-btn {
+    background: var(--surface);
+    color: var(--text-primary);
+}
+
+body.dark-mode .theme-toggle {
+    background: var(--surface-glass);
+}
+
+body.dark-mode .notification {
+    background: var(--surface-glass);
+}
